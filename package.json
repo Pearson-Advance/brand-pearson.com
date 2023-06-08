@@ -1,0 +1,19 @@
+{
+  "name": "brand-pearson.com",
+  "version": "0.0.1",
+  "description": "Pearson brand package for MFEs containing Pearson brand definitions (colours and styles).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pearson-Advance/brand-pearson.com.git"
+  },
+  "author": "Squirrel18 - <daniel.quiroga@edunext.co>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Pearson-Advance/brand-pearson.com/issues"
+  },
+  "homepage": "https://github.com/Pearson-Advance/brand-pearson.com#readme"
+}
