@@ -1,0 +1,66 @@
+// Gradebook MFE overrides.
+
+body #root {
+    header.site-header-desktop,
+    header.site-header-mobile {
+        background-color: $brand;
+
+        .dropdown-menu {
+            border: 1px solid $brand;
+
+            .dropdown-item {
+                color: $brand;
+            }
+        }
+
+        span, a {
+            color: $white;
+        }
+
+        .menu-content {
+            a {
+                color: $brand;
+            }
+        }
+
+        button.menu-trigger {
+            color: $white;
+
+            &::after{
+                color: $brand;
+            }
+
+            &::before {
+                content: none;
+            }
+
+            &:hover,
+            &:focus,
+            &:focus-visible,
+            &:focus-within,
+            &:active {
+                color: $brand;
+                background-color: $white;
+                border: $brand;
+                outline: $brand;
+
+                span, a {
+                    color: $brand;
+                }
+            }
+
+            border: 1px solid $white;
+            outline: $white;
+        }
+    }
+
+    header.site-header-desktop ~ main,
+    header.site-header-mobile ~ main { // Selector to specifically select the the standard MFE header
+        min-height: 100vh;
+    }
+
+    header.site-header-desktop ~ footer,
+    header.site-header-mobile ~ footer { // Selector to specifically select the the standard MFE footer
+        background-color: $brand !important;
+    }
+}

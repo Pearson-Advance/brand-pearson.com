@@ -1,4 +1,7 @@
 // Style overrides for learning MFE.
+
+$learning-gray: #777;
+
 body #root {
     // LEARNING HEADER OVERRIDES
     header.learning-header {
@@ -10,7 +13,7 @@ body #root {
 
             .user-dropdown {
                 svg {
-                    color: white !important;
+                    color: $white !important;
                     margin: 0 5px;
                 }
                 .dropdown-menu {
@@ -23,13 +26,13 @@ body #root {
 
                 a {
                     color: $brand !important;
-                    border-bottom: #777 1px solid;
+                    border-bottom: $learning-gray 1px solid;
                 }
             }
         }
 
         span, a {
-            color: white !important;
+            color: $white !important;
         }
 
         button.dropdown-toggle {
