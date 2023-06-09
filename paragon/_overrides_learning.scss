@@ -1,0 +1,82 @@
+// Style overrides for learning MFE.
+body #root {
+    // LEARNING HEADER OVERRIDES
+    header.learning-header {
+        background-color: $brand;
+
+        &>div {
+            padding-top: 13px !important;
+            padding-bottom: 13px !important;
+
+            .user-dropdown {
+                svg {
+                    color: white !important;
+                    margin: 0 5px;
+                }
+                .dropdown-menu {
+                    border-radius: 0 !important;
+                    min-width: initial;
+                    padding: 0 !important;
+                    border: 1px $brand solid;
+                    border-bottom: none;
+                }
+
+                a {
+                    color: $brand !important;
+                    border-bottom: #777 1px solid;
+                }
+            }
+        }
+
+        span, a {
+            color: white !important;
+        }
+
+        button.dropdown-toggle {
+            &::after{
+                color: $white;
+            }
+
+            &::before {
+                content: none;
+            }
+
+            &:hover,
+            &:focus,
+            &:focus-visible,
+            &:focus-within,
+            &:active{
+                background-color: $brand;
+                border: none !important;
+                outline: none !important;
+            }
+
+            border: none !important;
+            outline: none;
+        }
+    }
+
+    // LEARNING INSTRUCTOR TOOLBAR
+    div[data-testid="instructor-toolbar"]>div {
+        background-color: $brand-secondary !important;
+
+        &>div {
+            padding-top: 5px !important;
+            padding-bottom: 5px !important;
+        }
+    }
+
+    // LEARNING MAIN CONTENT
+    header.learning-header ~ main { // Selector to specifically select the main content of the learning MFE
+        min-height: 100vh;
+
+        .btn.btn-brand {
+            background-color: $brand;
+        }
+    }
+
+    // LEARNING FOOTER OVERRIDES
+    header.learning-header ~ footer { // Selector to specifically select the footer of the learning MFE
+        background-color: $brand !important;
+    }
+}
