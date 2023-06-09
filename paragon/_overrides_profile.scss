@@ -1,0 +1,47 @@
+// Style overrides for learning MFE.
+@import 'variables';
+
+body #root {
+    header.site-header-desktop,
+    header.site-header-mobile {
+        .nav-container {
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+
+        background-color: $brand;
+
+        span, a, button {
+            color: white !important;
+        }
+        button {
+            &::before {
+                content: none;
+            }
+            &:hover {
+                background-color: transparent;
+                border: none;
+            }
+        }
+
+        .menu-content {
+            border-radius: 0;
+            padding: 0 !important;
+
+            a {
+                color: $brand !important;
+                border-bottom: #777 1px solid;
+            }
+        }
+    }
+
+    header.site-header-desktop ~ main,
+    header.site-header-mobile ~ main {
+        min-height: 100vh;
+    }
+
+    header.site-header-desktop ~ footer,
+    header.site-header-mobile ~ footer {
+        background-color: $brand;
+    }
+}
