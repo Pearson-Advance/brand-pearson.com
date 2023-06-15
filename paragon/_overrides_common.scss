@@ -6,7 +6,7 @@ body #root {
         background-color: $brand;
 
         .dropdown-menu {
-            border: 1px solid $brand;
+            border-color: $brand;
 
             .dropdown-item {
                 color: $brand;
@@ -49,7 +49,7 @@ body #root {
                 }
             }
 
-            border: 1px solid $white;
+            border-color: $white;
             outline: $white;
         }
     }

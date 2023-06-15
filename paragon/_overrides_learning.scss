@@ -7,55 +7,60 @@ body #root {
     header.learning-header {
         background-color: $brand;
 
-        &>div {
-            padding-top: 13px !important;
-            padding-bottom: 13px !important;
+        .text-gray-700 {
+            color: $white !important;
+        }
 
-            .user-dropdown {
-                svg {
-                    color: $white !important;
-                    margin: 0 5px;
-                }
-                .dropdown-menu {
-                    border-radius: 0 !important;
-                    min-width: initial;
-                    padding: 0 !important;
-                    border: 1px $brand solid;
-                    border-bottom: none;
-                }
+        .dropdown-menu {
+            border-color: $brand;
 
-                a {
-                    color: $brand !important;
-                    border-bottom: $learning-gray 1px solid;
-                }
+            .dropdown-item {
+                color: $brand;
             }
         }
 
         span, a {
-            color: $white !important;
+            color: $white;
+        }
+
+        .menu-content {
+            a {
+                color: $brand;
+            }
         }
 
         button.dropdown-toggle {
+            color: $white;
+
             &::after{
                 color: $white;
-            }
-
-            &::before {
-                content: none;
             }
 
             &:hover,
             &:focus,
             &:focus-visible,
             &:focus-within,
-            &:active{
-                background-color: $brand;
-                border: none !important;
-                outline: none !important;
+            &:active {
+                color: $brand !important;
+                background-color: $white !important;
+                border: $brand !important;
+                outline: $brand !important;
+
+                span, a {
+                    color: $brand !important;
+                }
+
+                &::after{
+                    color: $brand;
+                }
             }
 
-            border: none !important;
-            outline: none;
+            &:svg {
+                display: block !important;
+            }
+
+            border-color: $white;
+            outline: $white;
         }
     }
 
