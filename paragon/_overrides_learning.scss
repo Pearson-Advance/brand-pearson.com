@@ -3,9 +3,12 @@
 $learning-gray: #777;
 
 body #root {
+    font-family: "Open Sans";
+
     // LEARNING HEADER OVERRIDES
     header.learning-header {
         background-color: $brand;
+        font-size: 1rem;
 
         .text-gray-700 {
             color: $white !important;
@@ -21,6 +24,10 @@ body #root {
 
         span, a {
             color: $white;
+
+            &.d-block.small {
+                display: none !important;
+            }
         }
 
         .menu-content {
@@ -62,6 +69,14 @@ body #root {
             border-color: $white;
             outline: $white;
         }
+
+        a.logo {
+            margin: 1rem 1rem 2rem 1rem;
+
+            img {
+                height: 135%;
+            }
+        }
     }
 
     // LEARNING INSTRUCTOR TOOLBAR
@@ -86,5 +101,9 @@ body #root {
     // LEARNING FOOTER OVERRIDES
     header.learning-header ~ footer { // Selector to specifically select the footer of the learning MFE
         background-color: $brand !important;
+
+        img {
+            max-height: 35px !important;
+        }
     }
 }
