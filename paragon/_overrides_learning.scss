@@ -9,6 +9,7 @@ body #root {
     header.learning-header {
         background-color: $brand;
         font-size: 1rem;
+        height: 100%;
 
         .text-gray-700 {
             color: $white !important;
@@ -74,8 +75,22 @@ body #root {
             margin: 1rem 1rem 2rem 1rem;
 
             img {
-                height: 135%;
+                height: 37px;
             }
+        }
+    }
+
+    #main-content {
+        .courseTabsNavigation, nav, a {
+            font-size: 0.875rem;
+        }
+
+        .h2[role="heading"] {
+            font-size: 1.5rem;
+        }
+
+        .btn {
+            font-size: 1rem;
         }
     }
 
