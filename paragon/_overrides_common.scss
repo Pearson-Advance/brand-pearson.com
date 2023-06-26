@@ -1,9 +1,12 @@
 // Gradebook MFE overrides.
 
 body #root {
+    font-family: "Open Sans";
+
     header.site-header-desktop,
     header.site-header-mobile {
         background-color: $brand;
+        font-size: 1rem;
 
         .dropdown-menu {
             border-color: $brand;
@@ -52,6 +55,14 @@ body #root {
             border-color: $white;
             outline: $white;
         }
+
+        a.logo {
+            margin: 0.5rem;
+
+            img {
+                height: 135%;
+            }
+        }
     }
 
     header.site-header-desktop ~ main,
@@ -62,5 +73,9 @@ body #root {
     header.site-header-desktop ~ footer,
     header.site-header-mobile ~ footer { // Selector to specifically select the the standard MFE footer
         background-color: $brand !important;
+
+        img {
+            max-height: 35px !important;
+        }
     }
 }
