@@ -73,9 +73,36 @@ body #root {
     header.site-header-desktop ~ footer,
     header.site-header-mobile ~ footer { // Selector to specifically select the the standard MFE footer
         background-color: $brand !important;
+        flex-direction: column;
 
-        img {
-            max-height: 35px !important;
+        .container-fluid {
+            align-items: center;
+            justify-content: center;
+
+            ul {
+                list-style: none;
+                display: inline-flex;
+                padding: 0;
+                margin-bottom: 3rem;
+
+                li:last-child::before {
+                    content: "|";
+                    padding: 0 20px;
+                    color: $white;
+                }
+
+                a {
+                    font-size: 0.875rem;
+                    color: $white !important;
+                }
+            }
+
+            &.copyright {
+                p {
+                    font-size: 0.7rem;
+                    color: $white !important;
+                }
+            }
         }
     }
 }
