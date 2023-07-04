@@ -7,12 +7,12 @@ body #root {
 
     // LEARNING HEADER OVERRIDES
     header.learning-header {
-        background-color: $brand;
+        background-color: $brand-third;
         font-size: 1rem;
         height: 100%;
 
         .text-gray-700 {
-            color: $white !important;
+            color: $brand !important;
         }
 
         .dropdown-menu {
@@ -24,7 +24,7 @@ body #root {
         }
 
         span, a {
-            color: $white;
+            color: $brand;
 
             &.d-block.small {
                 display: none !important;
@@ -38,10 +38,10 @@ body #root {
         }
 
         button.dropdown-toggle {
-            color: $white;
+            color: $brand;
 
             &::after{
-                color: $white;
+                color: $brand;
             }
 
             &:hover,
@@ -50,7 +50,7 @@ body #root {
             &:focus-within,
             &:active {
                 color: $brand !important;
-                background-color: $white !important;
+                background-color: transparent !important;
                 border: $brand !important;
                 outline: $brand !important;
 
@@ -67,8 +67,8 @@ body #root {
                 display: block !important;
             }
 
-            border-color: $white;
-            outline: $white;
+            border-color: $brand;
+            outline: $brand;
         }
 
         a.logo {
@@ -96,7 +96,7 @@ body #root {
 
     // LEARNING INSTRUCTOR TOOLBAR
     div[data-testid="instructor-toolbar"]>div {
-        background-color: $brand-secondary !important;
+        background-color: $brand !important;
 
         &>div {
             padding-top: 5px !important;
@@ -115,7 +115,7 @@ body #root {
 
     // LEARNING FOOTER OVERRIDES
     header.learning-header ~ footer { // Selector to specifically select the footer of the learning MFE
-        background-color: $brand !important;
+        background-color: $brand-secondary !important;
         flex-direction: column;
 
         .container-fluid {

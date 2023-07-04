@@ -5,7 +5,7 @@ body #root {
 
     header.site-header-desktop,
     header.site-header-mobile {
-        background-color: $brand;
+        background-color: $brand-third;
         font-size: 1rem;
 
         .dropdown-menu {
@@ -17,7 +17,7 @@ body #root {
         }
 
         span, a {
-            color: $white;
+            color: $brand;
         }
 
         .menu-content {
@@ -27,7 +27,7 @@ body #root {
         }
 
         button.menu-trigger {
-            color: $white;
+            color: $brand;
 
             &::after{
                 color: $brand;
@@ -43,7 +43,7 @@ body #root {
             &:focus-within,
             &:active {
                 color: $brand;
-                background-color: $white;
+                background-color: transparent;
                 border: $brand;
                 outline: $brand;
 
@@ -52,8 +52,8 @@ body #root {
                 }
             }
 
-            border-color: $white;
-            outline: $white;
+            border-color: $brand;
+            outline: $brand;
         }
 
         a.logo {
@@ -72,7 +72,7 @@ body #root {
 
     header.site-header-desktop ~ footer,
     header.site-header-mobile ~ footer { // Selector to specifically select the the standard MFE footer
-        background-color: $brand !important;
+        background-color: $brand-secondary !important;
         flex-direction: column;
 
         .container-fluid {
